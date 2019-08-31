@@ -1,17 +1,110 @@
 body{
-	background-image: url(./Public/fundo.png);
+	background-image: url(./public/fundo.jpg);
 	background-size: cover;
-	font-family:monospace;
+	background-position: center;
+	font-family: 'Changa', sans-serif;
 	color: #e3f2fd;
-	height: 100vh;
+	min-height: 100vh;
+	height: auto;
+	position: relative;
+	padding-bottom: 60px;
+	box-sizing: border-box;
+}
+
+/* Header Inicio */
+.main-header {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: center;
+}
+.main-header__title {
+	font-family: 'Bangers', cursive;
+	font-size: 24px;
+	letter-spacing: 2px;
+}
+.main-header__image {
+	border-radius: 50%;
+}
+@media (min-width: 768px) {
+	.main-header {
+		flex-flow: row;
+		justify-content: space-around;
+		align-items: flex-end;
+	}
+	.main-header__title {
+		height: 100%;
+	}
+	.main-header__image {
+		margin-top: 10px;
+	}
+}
+/* Header Fim */
+
+/* Section Inicio */
+.main-section {
+	display: flex;
+	flex-flow: column;
+	justify-content: center;
+	align-items: start;
+	padding: 15px;
+	text-shadow: 2px 2px #000;
+	text-align: justify;
+}
+.main-section__item__title {
+	font-family: 'Bangers', cursive;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+.main-section__item__list {
+	list-style-type: none;
 	margin: 0;
-	box-sizing:border-box;
+	padding-inline-start: 20px;
 }
-h1{
-	font-family: Arial, Helvetica, sans-serif;
-	margin-top: 0;
-	height: 200px ;
+.main-section__item__list__item {
+	margin-bottom: 10px;
 }
-h3{
-	font-family: 'Courier New', Courier, monospace;
+@media (min-width: 1024px) {
+	.main-section {
+		flex-flow: row;
+	}
+	.main-section__item {
+		flex: 1;
+	}
 }
+/* Section Fim */
+
+
+/* Footer Inicio */
+.main-footer {
+	box-sizing: border-box; 
+	position: absolute;
+	bottom: 0;
+	width: 100vw;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.main-footer__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 20px;
+	height: 40px;
+	width: 40px;
+	border-radius: 5px;
+}
+.main-footer__item--facebook {
+	background-color: #3b5998;
+}
+.main-footer__item--instagram {
+	background-color: #E1306C;
+}
+.main-footer__item--linkedin {
+	background-color: #0e76a8;
+}
+.main-footer__item:hover {
+	opacity: 0.65;
+}
+/* Footer Fim */

@@ -1,8 +1,11 @@
 <!doctype html>
 <html>
-
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Changa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
   <link rel="stylesheet" type="text/css" href="index.css">
   <title>
     Minha primeira página
@@ -10,42 +13,56 @@
 </head>
 
 <body>
-  <h1>
-    <img src="Public/eu.jpg" width="200px" >
-    Hi my name is Lucas !!
-  </h1>
-  <h2>
-    Sobre
-  </h2>
-  <p>
-    Me chamo Lucas Freitas, tenho 23 anos e resido na cidade de sorcaba - SP , entrei no mundo da tecnolgia
-    com 14 anos por motivos de força maior (Minha mãe não queria pagar o técnico para vir arrumar meu computador toda
-    semana :X )
-    Depois disso me apaixonei por tudo que envolve tecnologia, atualmente trabalho como Analista de suborte mas tenho
-    aspiração por se tornar um Dev web. !!
-  </p>
-  <h3>
-    Cursos
-  </h3>
-  <ul>
-    <li>
-      Manutenção e suporte de computadores e redes - Colégio Politécnico 
-    </li>
-    <li>
-      Analise e desenvolvimento de sistemas - Unip
-    </li>
-    <li>
-      Lógica de programação - Udemy
-    </li>
-    
-  </ul>
-  <footer>
-    <footer>
-      <div>Facebook</div>
-      <div>Intagran</div>
-      <div>Linkedin</div>
-    </footer>
+  <header class="main-header">
+    <h1 class="main-header__title">Hi my name is Lucas !!</h1>
+    <img class="main-header__image" src="public/eu.jpg" width="200px">
+  </header>
 
+  <section class="main-section">
+    <div class="main-section__item">
+      <h2 class="main-section__item__title">Sobre</h2>
+      <p>
+        Me chamo Lucas Freitas, tenho 23 anos e resido na cidade de Sorcaba - SP ,
+        entrei no mundo da tecnolgia com 14 anos por motivos de força maior
+        (Minha mãe não queria pagar o técnico para vir arrumar meu computador toda semana :X )
+      </p>
+      <p>
+        Depois disso me apaixonei por tudo que envolve tecnologia,
+        atualmente trabalho como Analista de suporte, mas tenho aspiração por me tornar um Dev web. !!
+      </p>
+    </div>
+
+    <div class="main-section__item">
+      <h2 class="main-section__item__title">Cursos</h2>
+      <ul class="main-section__item__list">
+        <li class="main-section__item__list__item">
+          <i class="fa fa-angle-right"></i>
+          Manutenção e suporte de computadores e redes - Colégio Politécnico</li>
+        <li class="main-section__item__list__item">
+          <i class="fa fa-angle-right"></i>
+          Analise e desenvolvimento de sistemas - Unip
+        </li>
+        <li class="main-section__item__list__item">
+          <i class="fa fa-angle-right"></i>
+          Lógica de programação - Udemy
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <a href="https://www.facebook.com/lukaz.f.goncalves" target="_blank"
+      class="main-footer__item main-footer__item--facebook">
+      <span class="fab fa-facebook-f"></span>
+    </a>
+    <a href="https://www.instagram.com/lukfreitaz/" target="_blank"
+      class="main-footer__item main-footer__item--instagram">
+      <span class="fab fa-instagram"></span>
+    </a>
+    <a href="https://www.linkedin.com/in/lucas-freitas-754246169/" target="_blank"
+      class="main-footer__item main-footer__item--linkedin">
+      <span class="fab fa-linkedin"></span>
+    </a>
+  </footer>
 </body>
-
 </html>
